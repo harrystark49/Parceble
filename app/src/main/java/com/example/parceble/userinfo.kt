@@ -8,6 +8,7 @@ data class userinfo(var uname:String,var pass:String) : Parcelable {
         parcel.readString()!!,
         parcel.readString()!!
     )
+    //parceble
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(uname)
         parcel.writeString(pass)
